@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arceuss FC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: black;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        .headline-container {
+            display: flex;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .headline-text {
+            background: black;
+            color: white;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .headline-text h2 {
+            color: red;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .headline-text h1 {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .headline-text p {
+            color: lightgray;
+        }
+
+        .headline-image {
+            flex: 1;
+        }
+
+        .headline-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-section {
+            margin: 20px auto;
+            width: 90%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .news-item {
+            flex: 1 1 calc(33% - 20px);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .news-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fixture-section {
+            background: #f8f8f8;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .fixture-section h3 {
+            margin-bottom: 10px;
+            color: red;
+        }
+
+        .last-result {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .last-result h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .last-result .match-score {
+            font-size: 24px;
+            color: black;
+        }
+
+        .last-result .match-report {
+            margin-top: 10px;
+        }
+
+        .more-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .more-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Arceuss Logo" width="60" height="60">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Fixture</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div style="color: white; font-size: 18px;">🌍 ENG</div>
+        </nav>
+    </header>
+
+    <section class="headline-container">
+        <div class="headline-text">
+            <h2>ARCEUSS FC</h2>
+            <h1>REMY’S UNBELIEVABLE STATISTIC AGAINST ASTRAA FUT</h1>
+            <p>more at arceussnews.com</p>
+        </div>
+        <div class="headline-image">
+            <img src="remy-image1.jpg" alt="Remy Celebrating">
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="news-item">
+            <img src="news-image1.jpg" alt="News Image">
+            <h4>“we miss to lose” - adamiskandar</h4>
+        </div>
+        <div class="news-item">
+            <img src="news-image2.jpg" alt="News Image">
+            <h4>Play to kill gameplay shown by arep “legoman” takhri</h4>
+        </div>
+        <div class="news-item">
+            <img src="news-image3.jpg" alt="News Image">
+            <h4>Pemy finally got back his performance after scoring hatrick</h4>
+        </div>
+        <div class="news-item">
+            <img src="news-image4.jpg" alt="News Image">
+            <h4>“Nazim a.k.a Bong need to retired” arceuss fans complaining about nazim’s fitness</h4>
+        </div>
+    </section>
+
+    <div class="fixture-section">
+        <h3>Next Fixtures</h3>
+        <p>ARCEUSS ELITE <strong>VS</strong> ARCEUSS LITE</p>
+        <p><strong>8.30PM MYT</strong> - new trafford</p>
+        <a class="more-button" href="#">more fixtures →</a>
+    </div>
+
+    <div class="last-result">
+        <h3>Last Result</h3>
+        <div class="match-score">
+            <span>ASTRAA FUT</span> <strong>1</strong> - <strong>5</strong> <span>ARCEUSS FC</span>
+        </div>
+        <div class="match-report">
+            <a class="more-button" href="#">MATCH REPORT</a>
+        </div>
+    </div>
+</body>
+
+</html>
